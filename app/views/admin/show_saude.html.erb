@@ -1,0 +1,22 @@
+<br />
+<h3>Cadastrados Saúde Mais</h3>
+<br /><br />
+<table border="1" width="95%" class="tabela-saude">
+	<tr>
+		<th>ID</th>
+		<th>NOME</th>
+		<th>ENDERECO</th>
+		<th>E-MAIL</th>
+		<th>RG</th>
+	<tr>
+	<% @register.each do |r| %>
+		<tr>
+			<td width="2%"><%= r.id %></td>
+			<td><%= r.name %></td>
+			<td><%= r.address %></td>
+			<td width="20%"><%= r.email %></td>
+			<td width="15%"><%= r.rg %></td>
+		</tr>
+	<% end %>
+
+</table>

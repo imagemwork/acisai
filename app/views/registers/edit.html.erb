@@ -1,0 +1,28 @@
+<h1>Editing register</h1>
+
+<% form_for(@register) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :rg %><br />
+    <%= f.text_field :rg %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @register %> |
+<%= link_to 'Back', registers_path %>

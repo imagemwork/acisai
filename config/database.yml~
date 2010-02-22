@@ -1,0 +1,14 @@
+production:
+  adapter: mysql
+  encoding: utf8
+  database: acisai
+  username: acisai
+  password: acisai
+  host: mysql01.acisai.com
+  pool: 5
+
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000

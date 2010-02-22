@@ -1,0 +1,35 @@
+<h2 class="style_titles">Cadastro Saúde Mais</h2><br />
+
+<div id="form-saude">
+	
+	<% form_for(@register) do |f| %>
+	  <%= error_messages_for :register,
+        :header_message => "Por Favor tente Novamente",
+        :message => "Verifique os seguintes campos:" %><br />
+
+	  <p>
+	    Nome: <i>(requerido)</i><br />
+	    <%= f.text_field :name, :class => "form-saude" %>
+	  </p>
+	  <p>
+	    Endereço: <i>(requerido)</i><br />
+	    <%= f.text_field :address, :class => "form-saude" %>
+	  </p>
+	  <p>
+	   	E-mail: <i>(requerido)</i><br />
+	    <%= f.text_field :email, :class => "form-saude" %>
+	  </p>
+	  <p>
+	   	RG: <i>(requerido)</i><br />
+	    <%= f.text_field :rg, :class => "form-saude" %>
+	  </p>
+	  <p>
+		<br />
+	    <%= f.submit 'Cadastrar' %>
+	  </p>
+	<% end %>
+
+</div>
+<div id="linkVoltar">
+  <%= link_voltar("Voltar") %>
+</div>
